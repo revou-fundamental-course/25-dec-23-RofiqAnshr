@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keliling dan Luas Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="brand">
+                <a id="firstname">Kalkulator</a>
+                <a id="lastname">Matematika</a>
+            </div>
+            <nav class="navigation">
+                <a id="nav-luas" href="">Luas Segitiga</a>
+                <a id="nav-keliling" href="">Keliling Segitiga</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="picture">
+            <img src="assets/segitga.png" alt="gambar segitiga">
+        </div>
+        <div class="luas">
+            <h2 class="labelLuas">Luas Segitiga</h2>
+        </div>
+        <div>
+            <p class="rumus-luas-segitiga">L=1/2 a x t</p>
+        </div>
+        <section id="input-area-seaction">
+            <form id="formluas">
+                <label for="input-alas" id="label-alas">Alas</label>
+                <input type="number" id="input-alas" class="kaltik-input">
+                <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+                <input type="number" id="input-tinggi" class="kaltik-input">
+                <p id="hasil-luas"></p>
+            </form>
+            <div class="buttons">
+                <button onclick="hitungluas()" id="btn-hitung-luas">Hitung</button>
+                <button onclick="resetluas()"id="btn-reset-luas">Reset</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="keliling">
+            <h2 class="labelKeliling">Keliling Segitiga</h2>
+        </div>
+        <div>
+            <p class="rumus-keliling-segitiga">K= a + b + c</p>
+        </div>
+        <section id="input-parameter-seaction">
+            <form id="formkeliling">
+                <label for="input-a" id="label-a">Sisi a</label>
+                <input type="number" id="input-a" class="kaltik-input">
+                <label for="input-b" id="label-b">Sisi b</label>
+                <input type="number" id="input-b" class="kaltik-input">
+                <label for="input-c" id="label-c">Sisi c</label>
+                <input type="number" id="input-c" class="kaltik-input">
+                <p id="hasil-keliling"></p>
+            </form>
+            <div class="buttons">
+                <button onclick="hitungkeliling()" id="btn-hitung-keliling">Hitung</button>
+                <button onclick="resetkeliling()"id="btn-reset-keliling">Reset</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
